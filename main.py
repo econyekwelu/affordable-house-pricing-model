@@ -1,16 +1,14 @@
-# This is a sample Python script.
+import csv
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    with open('data/train.csv', 'r', newline='') as file:
+        csv_reader = csv.reader(file)
+        # Skip the header row if present
+        next(csv_reader, None)
+        row_count = 0
+        column_count = 0
+        for row in csv_reader:
+            row_count += 1
+            column_count = max(column_count, len(row))
+        print(f"Row count: {row_count}")
+        print(f"Column count: {column_count}")
