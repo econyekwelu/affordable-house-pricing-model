@@ -42,7 +42,7 @@ def make_train_val_test_split_random(seed = 45):
         "seed": seed, "threshold": thr,
     }
 def plot_split(res, bins=40, log=False):
-    """Overlaid histograms of SalePrice by split (optionally log x-axis)."""
+
     tr = res["train"]["SalePrice"]
     va = res["val"]["SalePrice"]
     te = res["test"]["SalePrice"]
