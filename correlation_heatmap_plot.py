@@ -2,7 +2,6 @@ from global_imports import *
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 def plot_corr_heatmap_top_k_features(k=12, exclude = (), annotate = True ):
 
     number_of_columns = df.select_dtypes(include=[np.number]).columns.tolist()
