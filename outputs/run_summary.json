@@ -1,0 +1,18 @@
+{
+  "midpoint": 163000.0,
+  "best_classification_model": "Logistic Regression",
+  "best_regression_model": "Neural Network (MLP)",
+  "outputs": {
+    "plots_png": [
+      "outputs\\plot1_learning_curve_classification_nn.png",
+      "outputs\\plot2_learning_curve_regression_nn.png",
+      "outputs\\plot3_confusion_matrix_best_classification.png",
+      "outputs\\plot4_residuals_vs_predicted_best_regression.png",
+      "outputs\\plot5_feature_importance_regression_linear.png"
+    ],
+    "tables_csv": [
+      "outputs\\table1_classification_comparison.csv",
+      "outputs\\table2_regression_comparison.csv"
+    ]
+  }
+}
