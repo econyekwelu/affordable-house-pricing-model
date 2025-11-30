@@ -1,2 +1,2 @@
-from neural_network.normal_vs_NN import run_normal_vs_neural_network
+from normal_vs_neural_network import run_normal_vs_neural_network
 print(run_normal_vs_neural_network())
